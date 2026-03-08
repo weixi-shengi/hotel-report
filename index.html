@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>飯店客評統計報表</title>
+    <style>
+        body { font-family: -apple-system, sans-serif; background: #f4f7f6; padding: 20px; color: #333; }
+        .card { background: white; border-radius: 12px; padding: 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin-bottom: 20px; text-align: center; }
+        .score { font-size: 3.5rem; font-weight: bold; color: #007aff; margin: 10px 0; }
+        table { width: 100%; border-collapse: collapse; background: white; border-radius: 12px; overflow: hidden; }
+        th, td { padding: 15px; text-align: left; border-bottom: 1px solid #eee; font-size: 0.9rem; }
+        th { background: #007aff; color: white; }
+        .tag { padding: 4px 8px; border-radius: 4px; font-size: 0.7rem; color: white; font-weight: bold; }
+        .google { background: #4285F4; } .booking { background: #003580; } .agoda { background: #873392; }
+    </style>
+</head>
+<body>
+    <h1>🏨 飯店客評月度統計</h1>
+    <div class="card">
+        <div style="font-size: 0.9rem; color: #666;">二月全平台平均得分</div>
+        <div class="score">4.5</div>
+        <div style="font-size: 0.8rem; color: #999;">(這是測試資料，之後會變自動更新)</div>
+    </div>
+    <table>
+        <thead>
+            <tr><th>平台</th><th>分數</th><th>評論摘要</th></tr>
+        </thead>
+        <tbody>
+            <tr><td><span class="tag google">Google</span></td><td>5.0</td><td>房間非常乾淨。</td></tr>
+            <tr><td><span class="tag booking">Booking</span></td><td>4.0</td><td>早餐選擇多樣。</td></tr>
+            <tr><td><span class="tag agoda">Agoda</span></td><td>4.5</td><td>服務態度親切。</td></tr>
+        </tbody>
+    </table>
+</body>
+</html>
